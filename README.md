@@ -7,14 +7,14 @@ A Vue3 component for Typed.js with TypeScript support. You can use it in Vue3 + 
 ### Install
 
 ```shell
-npm install vue3-typed-js typed.js sass
+npm install vue3-typed-ts typed.js sass
 ```
 
 ### Import
 
 ```vue
 <script setup lang="ts">
-  import {VueTypedJs} from "vue-typed-ts";
+  import {VueTypedJs} from "vue3-typed-ts";
 </script>
 
 <template>
