@@ -1,0 +1,31 @@
+{
+  "name": "vue3-typed-js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A Vue3 component for Typed.js",
+  "main": "./packages/index.ts",
+  "keywords": [
+    "typedjs"
+  ],
+  "author": "Harada Mikan",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "dts": "tsc -p ./tsconfig.types.json",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.9",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "sass": "^1.70.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vue": "^3.4.15",
+    "vue-tsc": "^1.8.25"
+  }
+}
