@@ -1,13 +1,22 @@
 {
-  "name": "vue3-typed-js",
-  "private": true,
+  "name": "vue-typed-ts",
+  "private": false,
   "version": "1.0.0",
   "type": "module",
-  "description": "A Vue3 component for Typed.js",
+  "description": "A Typed.js wrapped library for Vue3 with type support",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "keywords": [
-    "typedjs", "vue3", "vue", "vue3-typed-js", "vue3-typedjs", "vue3-typedjs", "vue-typed-js", "vue-typedjs", "vue-typedjs"
+    "typedjs",
+    "vue3",
+    "vue",
+    "vue3-typed-js",
+    "vue3-typedjs",
+    "vue-typed-js",
+    "vue-typedjs",
+    "typescript",
+    "vue-typed-ts",
+    "vue-typedts"
   ],
   "author": "Mikan Harada",
   "license": "MIT",
