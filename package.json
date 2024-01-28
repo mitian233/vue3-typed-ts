@@ -8,7 +8,7 @@
   "keywords": [
     "typedjs"
   ],
-  "author": "Harada Mikan",
+  "author": "Mikan Harada",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
