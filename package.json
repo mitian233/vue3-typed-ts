@@ -1,7 +1,7 @@
 {
   "name": "vue3-typed-ts",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A Typed.js wrapped library for Vue3 with type support",
   "main": "./dist/index.js",
@@ -38,5 +38,8 @@
     "vite-plugin-dts": "^3.7.2",
     "vue": "^3.4.15",
     "vue-tsc": "^1.8.25"
+  },
+  "publishConfig": {
+    "@mitian233:vue3-typed-ts": "https://npm.pkg.github.com"
   }
 }
