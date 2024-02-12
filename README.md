@@ -7,7 +7,7 @@ A Vue3 component for [Typed.js](https://mattboldt.com/demos/typed-js/) with Type
 ### Install
 
 ```shell
-npm install vue3-typed-ts typed.js sass
+npm install vue3-typed-ts
 ```
 
 ### Example
