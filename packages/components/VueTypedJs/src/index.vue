@@ -2,7 +2,7 @@
 import Typed from 'typed.js';
 import {TypedOptions} from 'typed.js';
 import {props as TypedProps, getEventHandlers} from "./typed-component.config";
-import {onMounted, onUnmounted, ref, getCurrentInstance, ComponentInternalInstance, useSlots} from "vue";
+import {onMounted, onUnmounted, ref, getCurrentInstance, ComponentInternalInstance, useSlots, watch} from "vue";
 
 const {proxy, props} = getCurrentInstance() as ComponentInternalInstance;
 const slots = useSlots();
@@ -28,6 +28,10 @@ const initTypedJS = () => {
 }
 
 onMounted(() => {
+  initTypedJS();
+})
+watch(props, () => {
+  typedObj.value?.destroy();
   initTypedJS();
 })
 onUnmounted(() => {
