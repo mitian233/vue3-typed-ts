@@ -1,14 +1,21 @@
 <script setup lang="ts">
-import Typed from 'typed.js';
-import {TypedOptions} from 'typed.js';
+import Typed, {TypedOptions} from 'typed.js';
 import {props as TypedProps, getEventHandlers} from "./typed-component.config";
-import {onMounted, onUnmounted, ref, getCurrentInstance, ComponentInternalInstance, useSlots, watch} from "vue";
+import {
+  onMounted,
+  onUnmounted,
+  ref,
+  getCurrentInstance,
+  ComponentInternalInstance,
+  useSlots,
+  watch,
+} from "vue";
 
-const {proxy, props} = getCurrentInstance() as ComponentInternalInstance;
+const {proxy} = getCurrentInstance() as ComponentInternalInstance;
 const slots = useSlots();
 const slotElements = slots.default ? slots.default() : [];
 
-defineProps(TypedProps);
+const props = defineProps(TypedProps);
 
 const typedObj = ref<Typed | null>(null);
 const typedElement = ref<HTMLDivElement | null>(null);
@@ -30,7 +37,7 @@ const initTypedJS = () => {
 onMounted(() => {
   initTypedJS();
 })
-watch(props, () => {
+watch(() => JSON.stringify(props), () => {
   typedObj.value?.destroy();
   initTypedJS();
 })
