@@ -105,44 +105,44 @@ export const getEventHandlers = (context: ComponentPublicInstance|null, _typedCo
 
     let typedConfig = Object.assign({}, _typedConfig) as TypedOptions
 
-    typedConfig.onComplete = () => {
-        context?.$emit('onComplete')
+    typedConfig.onComplete = (...args) => {
+        context?.$emit('onComplete',...args)
     }
 
-    typedConfig.preStringTyped = () => {
-        context?.$emit('preStringTyped')
+    typedConfig.preStringTyped = (...args) => {
+        context?.$emit('preStringTyped',...args)
     }
 
-    typedConfig.onStringTyped = () => {
-        context?.$emit('onStringTyped')
+    typedConfig.onStringTyped = (...args) => {
+        context?.$emit('onStringTyped',...args)
     }
 
-    typedConfig.onLastStringBackspaced = () => {
-        context?.$emit('onLastStringBackspaced')
+    typedConfig.onLastStringBackspaced = (...args) => {
+        context?.$emit('onLastStringBackspaced',...args)
     }
 
-    typedConfig.onTypingPaused = () => {
-        context?.$emit('onTypingPaused')
+    typedConfig.onTypingPaused = (...args) => {
+        context?.$emit('onTypingPaused',...args)
     }
 
-    typedConfig.onTypingResumed = () => {
-        context?.$emit('onTypingResumed')
+    typedConfig.onTypingResumed = (...args) => {
+        context?.$emit('onTypingResumed',...args)
     }
 
-    typedConfig.onReset = () => {
-        context?.$emit('onReset')
+    typedConfig.onReset = (...args) => {
+        context?.$emit('onReset',...args)
     }
 
-    typedConfig.onStop = () => {
-        context?.$emit('onStop')
+    typedConfig.onStop = (...args) => {
+        context?.$emit('onStop',...args)
     }
 
-    typedConfig.onStart = () => {
-        context?.$emit('onStart')
+    typedConfig.onStart = (...args) => {
+        context?.$emit('onStart',...args)
     }
 
-    typedConfig.onDestroy = () => {
-        context?.$emit('onDestroy')
+    typedConfig.onDestroy = (...args) => {
+        context?.$emit('onDestroy',...args)
     }
 
     return typedConfig
